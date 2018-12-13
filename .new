@@ -1,0 +1,28 @@
+ access token ya29.GltwBgo-RPHik0HPfSwJaXGLFIYdw2KRea1Cj_Dc1RUKO60oaU--VkcHXghOj4Ac2x1alUhNieYPZOTeadxp-kwWWSyOnKvJuTlcNV8H_GOUV1YW63c7M3Eyphxr
+refresh token undefined
+profile: { id: '111916495965390234292',
+  displayName: 'Leon K',
+  name: { familyName: 'K', givenName: 'Leon' },
+  emails: [ { value: 'chaewonkong@gmail.com', type: 'account' } ],
+  photos:
+   [ { value: 'https://lh4.googleusercontent.com/-cAzRzy6oiUs/AAAAAAAAAAI/AAAAAAAAJRQ/SuDy2VzJbVc/photo.jpg?sz=50' } ],
+  gender: undefined,
+  provider: 'google',
+  _raw: '{\n "kind": "plus#person",\n "etag": "\\"jb1Xzanox6i8Zyse4DcYD8sZqy0/ZzfwRKx0w_Oi4YSHzNWRM9HCVso\\"",\n "nickname": "Leon. K.",\n "emails": [\n  {\n   "value": "chaewonkong@gmail.com",\n   "type": "account"\n  }\n ],\n "objectType": "person",\n "id": "111916495965390234292",\n "displayName": "Leon K",\n "name": {\n  "familyName": "K",\n  "givenName": "Leon"\n },\n "url": "https://plus.google.com/111916495965390234292",\n "image": {\n  "url": "https://lh4.googleusercontent.com/-cAzRzy6oiUs/AAAAAAAAAAI/AAAAAAAAJRQ/SuDy2VzJbVc/photo.jpg?sz=50",\n  "isDefault": false\n },\n "isPlusUser": true,\n "language":"ko",\n "circledByCount": 0,\n "verified": false\n}\n',
+  _json:
+   { kind: 'plus#person',
+     etag: '"jb1Xzanox6i8Zyse4DcYD8sZqy0/ZzfwRKx0w_Oi4YSHzNWRM9HCVso"',
+     nickname: 'Leon. K.',
+     emails: [ [Object] ],
+     objectType: 'person',
+     id: '111916495965390234292',
+     displayName: 'Leon K',
+     name: { familyName: 'K', givenName: 'Leon' },
+     url: 'https://plus.google.com/111916495965390234292',
+     image:
+      { url: 'https://lh4.googleusercontent.com/-cAzRzy6oiUs/AAAAAAAAAAI/AAAAAAAAJRQ/SuDy2VzJbVc/photo.jpg?sz=50',
+        isDefault: false },
+     isPlusUser: true,
+     language: 'ko',
+     circledByCount: 0,
+     verified: false } }
