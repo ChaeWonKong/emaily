@@ -5,6 +5,18 @@ const keys = require("../config/keys");
 
 const User = mongoose.model("users");
 
+passport.serializeUser((user, done) => {
+  // We may have multiple OAuth, so use unique id.
+  done(null, user.id);
+});
+
+passport.deserializeUser((id, done) => {
+  // Search id through User records
+  User.findById(id).then(user => {
+    done(null, user);
+  });
+});
+
 passport.use(
   new GoogleStrategy(
     {
