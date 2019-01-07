@@ -26,19 +26,16 @@ passport.use(
       // fixing proxy issues regarding heroku
       proxy: true
     },
-    (accessToken, refreshToken, profile, done) => {
-      User.findOne({ googleId: profile.id }).then(existingUser => {
-        if (existingUser) {
-          // Already hav a record
-          done(null, existingUser);
-        } else {
-          // If existingUser === null
-          // asynchronous action
-          new User({ googleId: profile.id })
-            .save()
-            .then(user => done(null, user));
-        }
-      });
+    async (accessToken, refreshToken, profile, done) => {
+      const existingUser = await User.findOne({ googleId: profile.id });
+      if (existingUser) {
+        // Already hav a record
+        return done(null, existingUser);
+      }
+      // If existingUser === null
+      // asynchronous action
+      const user = await new User({ googleId: profile.id }).save();
+      done(null, user);
     }
   )
 );
